@@ -12,8 +12,6 @@ import Experience from './components/sections/Experience';
 import Education from './components/sections/Education';
 import Contact from './components/sections/Contact';
 
-import "./App.css";
-
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
