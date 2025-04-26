@@ -702,6 +702,7 @@ section {
   gap: 0.5rem;
 }
 
+
 .company-location {
   display: flex;
   gap: 0.3rem;
@@ -768,7 +769,6 @@ section {
   text-decoration: none;
   font-weight: 600;
 }
-
 .contact-form {
   background-color: white;
   padding: 2rem;
@@ -853,6 +853,45 @@ textarea.form-control {
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 0;
+  }
+  
+  .contact-item {
+    padding: 1.2rem;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-item {
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    
+  }
+  
+  .form-control {
+    padding: 10px;
+  }
+  
+  .submit-btn {
+    padding: 0.8rem;
   }
 }
 
@@ -1010,7 +1049,6 @@ textarea.form-control {
     padding-top: 1.5rem;
   }
 }
-
 /* Responsive Styles */
 @media (max-width: 992px) {
   .contact-container {
@@ -1203,6 +1241,7 @@ textarea.form-control {
   opacity: 0.7;
 }
 
+/*additional css*/
 /* About Section */
 .about-section {
   position: relative;
@@ -1374,6 +1413,32 @@ textarea.form-control {
   margin-right: 0.5rem;
 }
 
+/* Responsive */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .about-image-container {
+    min-width: auto;
+  }
+  .image-tech-stack {
+    left: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-cta {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+}
 /* Skills Section */
 .skills-section {
   background-color: var(--light-bg);
@@ -1468,6 +1533,25 @@ textarea.form-control {
   border-radius: 0 0 10px 10px;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+  
+  .skill-card {
+    padding: 1rem 0.5rem;
+  }
+  
+  .skill-icon {
+    font-size: 2rem;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+  }
+}
 /* Projects Section */
 .projects-section {
   padding: 6rem 0;
@@ -1646,6 +1730,38 @@ textarea.form-control {
 .dark-mode .challenges {
   background: rgba(97, 218, 251, 0.1);
   color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 4rem 0;
+  }
+  
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+  
+  .filter-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-container {
+    height: 200px;
+  }
 }
 
 /* Education Section */
