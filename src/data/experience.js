@@ -20,7 +20,7 @@ const experienceData = [
         id: 2,
         title: "Front-end Developer",
         company: "Blue Technology",
-        location: "Shebin El kom , Menofia, Egypt",
+        location: "Shebin El kom, Menofia, Egypt",
         period: "3 months",
         type: "Full-time",
         description: [
@@ -36,7 +36,7 @@ const experienceData = [
         id: 3,
         title: "Front-end Developer Intern",
         company: "Blue Technology",
-        location: "Shebin El kom , Menofia, Egypt",
+        location: "Shebin El kom, Menofia, Egypt",
         period: "3 months",
         type: "Internship",
         description: [

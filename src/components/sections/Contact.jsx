@@ -73,7 +73,9 @@ const Contact = () => {
                             </div>
                             <div className="contact-text">
                                 <h3>Email</h3>
-                                <p>tassnemm70@gmail.com</p>
+                                <a href="mailto:tassnemm70@gmail.com">
+                                    tassnemm70@gmail.com
+                                </a>
                             </div>
                         </div>
 
@@ -105,11 +107,11 @@ const Contact = () => {
                                 <h3>LinkedIn</h3>
                                 <p>
                                     <a
-                                        href="https://www.linkedin.com/in/tasneemmohamed"
+                                        href="https://www.linkedin.com/in/tasneem-mohamed58/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        linkedin.com/in/tasneemmohamed
+                                        linkedin.com/in/tasneemmohamed58
                                     </a>
                                 </p>
                             </div>
