@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
     FaEnvelope,
     FaPhone,
@@ -11,14 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState(null);
+
 
     useEffect(() => {
         AOS.init({
@@ -27,44 +20,17 @@ const Contact = () => {
         });
     }, []);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevState) => ({
-            ...prevState,
-            [name]: value,
-        }));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-
-        // Simulate form submission
-        try {
-            await new Promise((resolve) => setTimeout(resolve, 1500));
-            setSubmitStatus("success");
-            setFormData({ name: "", email: "", subject: "", message: "" });
-        } catch (error) {
-            setSubmitStatus("error");
-        } finally {
-            setIsSubmitting(false);
-            setTimeout(() => {
-                setSubmitStatus(null);
-            }, 5000);
-        }
-    };
-
     return (
         <section id="contact" className="contact-section">
             <div className="container">
                 <div className="section-header" data-aos="fade-up">
-                    <h2>Contact Me</h2>
+                    <h2>Contact <span className="accent">Me</span></h2>
                     <p>Let's connect and discuss potential opportunities</p>
                 </div>
 
-                <div className="contact-container">
-                    <div className="contact-info" data-aos="fade-right">
-                        <div className="contact-item">
+                <div className="contact-container" data-aos="fade-up">
+                    <div className="contact-grid">
+                        <div className="contact-item" data-aos="fade-up" data-aos-delay="100">
                             <div className="contact-icon">
                                 <FaEnvelope />
                             </div>
@@ -76,7 +42,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="contact-item">
+                        <div className="contact-item" data-aos="fade-up" data-aos-delay="200">
                             <div className="contact-icon">
                                 <FaPhone />
                             </div>
@@ -86,7 +52,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="contact-item">
+                        <div className="contact-item" data-aos="fade-up" data-aos-delay="300">
                             <div className="contact-icon">
                                 <FaMapMarkerAlt />
                             </div>
@@ -96,7 +62,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="contact-item">
+                        <div className="contact-item" data-aos="fade-up" data-aos-delay="400">
                             <div className="contact-icon">
                                 <FaLinkedin />
                             </div>
@@ -114,7 +80,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="contact-item">
+                        <div className="contact-item" data-aos="fade-up" data-aos-delay="500">
                             <div className="contact-icon">
                                 <FaGithub />
                             </div>
@@ -132,7 +98,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="contact-item">
+                        <div className="contact-item" data-aos="fade-up" data-aos-delay="600">
                             <div className="contact-icon">
                                 <FaGitlab />
                             </div>

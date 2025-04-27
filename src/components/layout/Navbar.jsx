@@ -1,36 +1,58 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Navbar = ({ darkMode, toggleDarkMode }) => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
+            setScrolled(window.scrollY > 50);
+        };
+
+        const handleResize = () => {
+            if (window.innerWidth > 992) {
+                setMenuOpen(false);
             }
         };
 
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleResize);
+        
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
+    const navLinks = [
+        { id: "home", label: "Home" },
+        { id: "about", label: "About" },
+        { id: "skills", label: "Skills" },
+        { id: "projects", label: "Projects" },
+        { id: "experience", label: "Experience" },
+        { id: "education", label: "Education" },
+        { id: "contact", label: "Contact" },
+    ];
+
     return (
         <motion.nav
-            className={`navbar ${scrolled ? "scrolled" : ""}`}
+            className={`navbar ${scrolled ? "scrolled" : ""} ${darkMode ? "dark-mode" : ""}`}
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
         >
             <div className="navbar-container">
-                <Link to="/" className="logo">
+                <Link to="/" className="logo" onClick={closeMenu}>
                     <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -41,13 +63,19 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 </Link>
 
                 <div className="nav-controls">
-                    <button className="theme-toggle" onClick={toggleDarkMode}>
+                    <button 
+                        className="theme-toggle" 
+                        onClick={toggleDarkMode}
+                        aria-label="Toggle dark mode"
+                    >
                         {darkMode ? "☀️" : "🌙"}
                     </button>
 
                     <div
                         className={`menu-toggle ${menuOpen ? "active" : ""}`}
                         onClick={toggleMenu}
+                        aria-label="Toggle menu"
+                        aria-expanded={menuOpen}
                     >
                         <span></span>
                         <span></span>
@@ -55,48 +83,43 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                     </div>
                 </div>
 
-                <motion.ul
-                    className={`nav-links ${menuOpen ? "open" : ""}`}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ staggerChildren: 0.1 }}
-                >
-                    <motion.li whileHover={{ scale: 1.1 }}>
-                        <a href="#home" onClick={() => setMenuOpen(false)}>
-                            Home
-                        </a>
-                    </motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}>
-                        <a href="#about" onClick={() => setMenuOpen(false)}>
-                            About
-                        </a>
-                    </motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}>
-                        <a href="#skills" onClick={() => setMenuOpen(false)}>
-                            Skills
-                        </a>
-                    </motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}>
-                        <a href="#projects" onClick={() => setMenuOpen(false)}>
-                            Projects
-                        </a>
-                    </motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}>
-                        <a href="#experience" onClick={() => setMenuOpen(false)}>
-                            Experience
-                        </a>
-                    </motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}>
-                        <a href="#education" onClick={() => setMenuOpen(false)}>
-                            Education
-                        </a>
-                    </motion.li>
-                    <motion.li whileHover={{ scale: 1.1 }}>
-                        <a href="#contact" onClick={() => setMenuOpen(false)}>
-                            Contact
-                        </a>
-                    </motion.li>
-                </motion.ul>
+                <AnimatePresence>
+                    {(menuOpen || window.innerWidth > 992) && (
+                        <motion.ul
+                            className={`nav-links ${menuOpen ? "open" : ""}`}
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ 
+                                opacity: 1, 
+                                y: 0,
+                                transition: { staggerChildren: 0.1 }
+                            }}
+                            exit={{ opacity: 0, y: -20 }}
+                        >
+                            {navLinks.map((link, index) => (
+                                <motion.li
+                                    key={link.id}
+                                    custom={index}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ 
+                                        opacity: 1, 
+                                        x: 0,
+                                        transition: { delay: index * 0.1 }
+                                    }}
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
+                                    <a 
+                                        href={`#${link.id}`} 
+                                        onClick={closeMenu}
+                                        aria-label={`Go to ${link.label} section`}
+                                    >
+                                        {link.label}
+                                    </a>
+                                </motion.li>
+                            ))}
+                        </motion.ul>
+                    )}
+                </AnimatePresence>
             </div>
         </motion.nav>
     );
