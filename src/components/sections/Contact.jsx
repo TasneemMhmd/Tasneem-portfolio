@@ -41,7 +41,6 @@ const Contact = () => {
 
         // Simulate form submission
         try {
-            // Here you would typically send the form data to your backend or email service
             await new Promise((resolve) => setTimeout(resolve, 1500));
             setSubmitStatus("success");
             setFormData({ name: "", email: "", subject: "", message: "" });
@@ -49,8 +48,6 @@ const Contact = () => {
             setSubmitStatus("error");
         } finally {
             setIsSubmitting(false);
-
-            // Reset status after 5 seconds
             setTimeout(() => {
                 setSubmitStatus(null);
             }, 5000);
@@ -58,7 +55,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="contact">
+        <section id="contact" className="contact-section">
             <div className="container">
                 <div className="section-header" data-aos="fade-up">
                     <h2>Contact Me</h2>
@@ -153,98 +150,6 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-{/* 
-                    <div className="contact-form" data-aos="fade-left">
-                        <form onSubmit={handleSubmit}>
-                            <div className="form-group">
-                                <label htmlFor="name" className="form-label">
-                                    Name
-                                </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    className="form-control"
-                                    placeholder="Your name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="email" className="form-label">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    className="form-control"
-                                    placeholder="Your email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="subject" className="form-label">
-                                    Subject
-                                </label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
-                                    className="form-control"
-                                    placeholder="Subject"
-                                    value={formData.subject}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="message" className="form-label">
-                                    Message
-                                </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    className="form-control"
-                                    placeholder="Your message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type="submit"
-                                className="submit-btn"
-                                disabled={isSubmitting}
-                            >
-                                {isSubmitting ? (
-                                    <>
-                                        <span className="spinner"></span>
-                                        Sending...
-                                    </>
-                                ) : (
-                                    "Send Message"
-                                )}
-                            </button>
-
-                            {submitStatus === "success" && (
-                                <div className="form-success">Message sent successfully!</div>
-                            )}
-
-                            {submitStatus === "error" && (
-                                <div className="form-error">
-                                    Failed to send message. Please try again.
-                                </div>
-                            )}
-                        </form>
-                    </div> */}
                 </div>
             </div>
         </section>
