@@ -1335,7 +1335,6 @@ textarea.form-control {
 /* Responsive Styles */
 @media (max-width: 992px) {
 
-
     /* Navigation */
     .menu-toggle {
         display: flex;
@@ -1367,7 +1366,7 @@ textarea.form-control {
     .nav-links li {
         margin: 1rem 0;
     }
-
+    
 
     /* Contact section */
     .contact-container {
