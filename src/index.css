@@ -122,6 +122,7 @@ ul {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(97, 218, 251, 0.35);
     color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 
 .dark-mode .btn.primary:hover {
@@ -145,6 +146,7 @@ ul {
 .btn.secondary:hover {
     color: white;
     transform: translateY(-3px);
+    background-color: black;
 }
 
 .dark-mode .btn.secondary:hover {
