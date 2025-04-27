@@ -135,7 +135,7 @@ const About = () => {
                             transition={{ delay: 1 }}
                         >
                             <motion.a
-                                href="#contact"
+                                href="mailto:tassnemm70@gmail.com"
                                 className="btn primary"
                                 whileHover={{
                                     scale: 1.05,
