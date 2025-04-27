@@ -1375,6 +1375,7 @@ textarea.form-control {
     .menu-toggle {
         display: flex;
     }
+
     .nav-links {
         position: fixed;
         top: 80px;
@@ -1401,29 +1402,7 @@ textarea.form-control {
     .nav-links li {
         margin: 1rem 0;
     }
-.menu-toggle {
-        display: none;
-    }
 
-    .nav-links {
-        display: flex;
-        position: static;
-        transform: none;
-        background: transparent;
-        box-shadow: none;
-        padding: 0;
-        flex-direction: row;
-    }
-
-    .nav-links li {
-        margin: 0 1.2rem;
-        width: auto;
-    }
-
-    .nav-link {
-        display: inline;
-        padding: 0;
-    }
     /* Hero section */
     .hero-text h1 {
         font-size: 3rem;
