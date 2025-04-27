@@ -63,7 +63,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    overflow-x: hidden; /* Add this to prevent horizontal scroll */
+    overflow: hidden;
 }
 
 a {
