@@ -1345,7 +1345,7 @@ textarea.form-control {
         position: fixed;
         top: 80px;
         left: 0;
-        width: 100%;
+        width: 85%;
         flex-direction: column;
         align-items: center;
         background-color: white;
