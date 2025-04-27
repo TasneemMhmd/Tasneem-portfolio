@@ -554,17 +554,19 @@ section {
 }
 
 .education-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .education-card {
     background: white;
     border-radius: 12px;
     padding: 2rem;
+    width: fit-content;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     display: flex;
     gap: 1.5rem;
