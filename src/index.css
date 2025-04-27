@@ -1341,7 +1341,7 @@ textarea.form-control {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0;
+        margin-left: 0;
     }
 
     .menu-toggle {
