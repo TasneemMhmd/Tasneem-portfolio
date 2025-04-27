@@ -1337,8 +1337,8 @@ textarea.form-control {
 
     .nav-controls {
         display: flex;
-        justify-content: space-between;
-        align-items: left;
+        justify-content: center;
+        align-items: center;
         /* padding: 1rem 2rem; */
     }
     /* Contact section */
