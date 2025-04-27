@@ -1403,6 +1403,11 @@ textarea.form-control {
         margin: 1rem 0;
     }
 
+    .navbar-container logo{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
     /* Hero section */
     .hero-text h1 {
         font-size: 3rem;
