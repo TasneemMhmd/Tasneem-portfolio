@@ -12,6 +12,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     transition: background-color var(--transition-speed) ease;
 }
 
@@ -75,7 +76,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     z-index: 1000;
     padding: 1.5rem 0;
     transition: all 0.3s ease;
@@ -1123,7 +1124,6 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
-
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1336,39 +1336,6 @@ textarea.form-control {
 /* Responsive Styles */
 @media (max-width: 992px) {
 
-    /* Navigation */
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 85%;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-        padding: 2rem 0;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transform: translateY(-150%);
-        transition: transform 0.3s ease;
-        z-index: 999;
-    }
-
-    .dark-mode .nav-links {
-        background-color: var(--dark-bg);
-    }
-
-    .nav-links.open {
-        transform: translateY(0);
-    }
-
-    .nav-links li {
-        margin: 1rem 0;
-    }
-
-
     /* Contact section */
     .contact-container {
         grid-template-columns: 1fr;
@@ -1404,6 +1371,38 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+
+    /* Navigation */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2rem 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+
+    .dark-mode .nav-links {
+        background-color: var(--dark-bg);
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
 
     /* Hero section */
     .hero-text h1 {
@@ -1481,12 +1480,12 @@ textarea.form-control {
     .contact-container {
         grid-template-columns: 1fr;
     }
-
+    
     .form-control {
         width: 100%;
         box-sizing: border-box;
     }
-
+    
     .contact-item {
         flex-direction: row;
         align-items: center;
