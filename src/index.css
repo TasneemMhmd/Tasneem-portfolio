@@ -43,6 +43,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-bg);
+    overflow-x: hidden;
     transition: background-color var(--transition-speed);
 }
 
@@ -406,7 +407,6 @@ ul {
         text-align: center;
     }
 
-    /* Add close button for the mobile menu */
     .menu-close {
         position: absolute;
         top: 25px;
