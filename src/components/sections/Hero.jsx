@@ -7,7 +7,7 @@ const Hero = () => {
     useEffect(() => {
         const typed = new Typed(typedRef.current, {
             strings: [
-                'Front-end Developer',
+                'Front-end Dev',
                 'React.js Specialist',
             ],
             typeSpeed: 70,
