@@ -75,7 +75,7 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     z-index: 1000;
     padding: 1.5rem 0;
     transition: all 0.3s ease;
@@ -1337,11 +1337,6 @@ textarea.form-control {
 @media (max-width: 992px) {
 
     /* Navigation */
-    .nav-controls {
-        display: flex;
-        justify-content: space-between;
-    }
-
     .menu-toggle {
         display: flex;
     }
