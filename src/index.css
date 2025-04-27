@@ -1123,6 +1123,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
+
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -1336,11 +1337,12 @@ textarea.form-control {
 @media (max-width: 992px) {
 
     /* Navigation */
-.nav-controls{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
+    .nav-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
 
     .menu-toggle {
         display: flex;
@@ -1372,7 +1374,7 @@ textarea.form-control {
     .nav-links li {
         margin: 1rem 0;
     }
-    
+
 
     /* Contact section */
     .contact-container {
@@ -1486,12 +1488,12 @@ textarea.form-control {
     .contact-container {
         grid-template-columns: 1fr;
     }
-    
+
     .form-control {
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .contact-item {
         flex-direction: row;
         align-items: center;
