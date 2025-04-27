@@ -1403,11 +1403,13 @@ textarea.form-control {
         margin: 1rem 0;
     }
 
-    .navbar-container logo{
-        font-size: 0.6rem;
-        font-weight: 500;
+    .nav-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
     }
-    
+
     /* Hero section */
     .hero-text h1 {
         font-size: 3rem;
