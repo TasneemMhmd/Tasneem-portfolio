@@ -5,17 +5,22 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = ({ darkMode, toggleDarkMode }) => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
 
-    useEffect(() => {
+useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
         };
 
         const handleResize = () => {
+            setWindowWidth(window.innerWidth);
             if (window.innerWidth > 992) {
                 setMenuOpen(false);
             }
         };
+
+
+        handleResize();
 
         window.addEventListener("scroll", handleScroll);
         window.addEventListener("resize", handleResize);
