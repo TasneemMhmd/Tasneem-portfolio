@@ -111,7 +111,7 @@ const Contact = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        linkedin.com/in/tasneemmohamed58
+                                        tasneemmohamed58
                                     </a>
                                 </p>
                             </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        github.com/TasneemMhmd
+                                        TasneemMhmd
                                     </a>
                                 </p>
                             </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        gitlab.com/Tasneem56
+                                        Tasneem56
                                     </a>
                                 </p>
                             </div>

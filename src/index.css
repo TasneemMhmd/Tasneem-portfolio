@@ -1373,6 +1373,7 @@ textarea.form-control {
 @media (max-width: 768px) {
 
     /* Navigation */
+
     .menu-toggle {
         display: flex;
     }
@@ -1465,10 +1466,14 @@ textarea.form-control {
     /* Education section */
     .education-section {
         padding: 4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .education-card {
-        padding: 1.5rem;
+        padding: 1rem;
         flex-direction: column;
     }
 
