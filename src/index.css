@@ -841,7 +841,6 @@ ul {
 }
 
 /* ========== SKILLS SECTION ========== */
-/* Skills Section */
 .skills-section {
     background-color: var(--light-bg);
     padding: 6rem 0;
@@ -1623,7 +1622,7 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     justify-items: center;
 }
 
@@ -1635,8 +1634,9 @@ ul {
     padding: 20px;
     box-shadow: var(--shadow);
     transition: all var(--transition-speed);
-    width: 100%;
     max-width: 300px;
+    width: 100%;
+
 }
 
 .dark-mode .contact-item {
