@@ -12,7 +12,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     transition: background-color var(--transition-speed) ease;
 }
 
@@ -1120,9 +1120,9 @@ section {
 
 /* Contact Section Styles */
 .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-info {
     display: flex;
@@ -1496,9 +1496,6 @@ textarea.form-control {
 
 @media (max-width: 576px) {
 
-    body{
-        overflow-x: hidden;
-    }
     /* Hero section */
     .hero-text h1 {
         font-size: 2.5rem;

@@ -153,7 +153,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-
+{/* 
                     <div className="contact-form" data-aos="fade-left">
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
@@ -244,7 +244,7 @@ const Contact = () => {
                                 </div>
                             )}
                         </form>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
