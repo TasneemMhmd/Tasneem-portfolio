@@ -1335,6 +1335,12 @@ textarea.form-control {
 /* Responsive Styles */
 @media (max-width: 992px) {
 
+    .nav-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
     /* Contact section */
     .contact-container {
         grid-template-columns: 1fr;
@@ -1403,12 +1409,6 @@ textarea.form-control {
         margin: 1rem 0;
     }
 
-    .nav-controls {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-    }
 
     /* Hero section */
     .hero-text h1 {
