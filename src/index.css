@@ -97,6 +97,16 @@ ul {
     border: none;
     outline: none;
     margin-right: 15px;
+    white-space: nowrap; 
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 7px 15px;
+        font-size: 0.9rem;
+        margin-right: 10px; 
+        margin-bottom: 10px; 
+    }
 }
 
 .btn i,
@@ -767,31 +777,74 @@ hero {
 .about-cta .btn i {
     margin-right: 0.5rem;
 }
-
 @media (max-width: 992px) {
     .about-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        flex-direction: column; /* Stack vertically on tablets/mobile */
+        gap: 2rem; /* Reduce gap */
     }
 
     .about-image-container {
-        max-width: 450px;
+        min-width: auto; /* Remove fixed min-width */
+        width: 100%;
+        max-width: 300px; /* Constrain image size */
+        margin-bottom: 2rem;
+    }
+
+    .image-wrapper {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 1/1; /* Maintain square ratio */
         margin: 0 auto;
+    }
+
+    .profile-image {
+        height: auto;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0 15px; /* Add some padding */
     }
 }
 
 @media (max-width: 576px) {
-    .about-highlights {
-        grid-template-columns: 1fr;
+    .about-content {
+        gap: 1.5rem;
+    }
+
+    .about-image-container {
+        max-width: 250px;
+    }
+
+    .image-tech-stack {
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        text-align: center;
     }
 
     .about-cta {
         flex-direction: column;
+        align-items: center;
     }
 
     .about-cta .btn {
         width: 100%;
+        max-width: 250px;
         margin-right: 0;
+        margin-bottom: 1rem;
     }
 }
 
