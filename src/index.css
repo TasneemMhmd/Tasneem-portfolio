@@ -12,7 +12,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     transition: background-color var(--transition-speed) ease;
 }
 
@@ -1373,10 +1373,6 @@ textarea.form-control {
 @media (max-width: 768px) {
 
     /* Navigation */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
     .menu-toggle {
         display: flex;
     }
