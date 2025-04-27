@@ -46,7 +46,6 @@ const About = () => {
                             <span>JavaScript</span>
                             <span>CSS3</span>
                             <span>HTML5</span>
-
                         </motion.div>
                     </motion.div>
 
@@ -71,7 +70,10 @@ const About = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.7 }}
                         >
-                            Hello! I'm <span className="accent-text">Tasneem Mohamed</span>, a passionate front-end developer specializing in React.js. With a keen eye for design and a commitment to clean code, I create digital experiences that are both beautiful and functional.
+                            Hello! I'm <span className="accent-text">Tasneem Mohamed</span>, a
+                            passionate front-end developer specializing in React.js. With a
+                            keen eye for design and a commitment to clean code, I create
+                            digital experiences that are both beautiful and functional.
                         </motion.p>
 
                         <motion.p
@@ -79,7 +81,10 @@ const About = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.8 }}
                         >
-                            My journey includes graduating from ITI with a focus on modern web technologies. I approach each project with attention to detail and a user-first mindset, ensuring accessibility and performance are never compromised.
+                            My journey includes graduating from ITI with a focus on modern web
+                            technologies. I approach each project with attention to detail and
+                            a user-first mindset, ensuring accessibility and performance are
+                            never compromised.
                         </motion.p>
 
                         <motion.div
@@ -88,10 +93,7 @@ const About = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.9 }}
                         >
-                            <motion.div
-                                className="highlight-item"
-                                whileHover={{ y: -5 }}
-                            >
+                            <motion.div className="highlight-item" whileHover={{ y: -5 }}>
                                 <div className="highlight-icon">
                                     <i className="fas fa-code"></i>
                                 </div>
@@ -101,10 +103,7 @@ const About = () => {
                                 </div>
                             </motion.div>
 
-                            <motion.div
-                                className="highlight-item"
-                                whileHover={{ y: -5 }}
-                            >
+                            <motion.div className="highlight-item" whileHover={{ y: -5 }}>
                                 <div className="highlight-icon">
                                     <i className="fas fa-bolt"></i>
                                 </div>
@@ -114,10 +113,7 @@ const About = () => {
                                 </div>
                             </motion.div>
 
-                            <motion.div
-                                className="highlight-item"
-                                whileHover={{ y: -5 }}
-                            >
+                            <motion.div className="highlight-item" whileHover={{ y: -5 }}>
                                 <div className="highlight-icon">
                                     <i className="fas fa-mobile-alt"></i>
                                 </div>
@@ -127,36 +123,29 @@ const About = () => {
                                 </div>
                             </motion.div>
                         </motion.div>
-
-                        <motion.div
-                            className="about-cta"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1 }}
-                        >
+                        <motion.div className="about-cta">
                             <motion.a
                                 href="mailto:tassnemm70@gmail.com"
                                 className="btn primary"
                                 whileHover={{
-                                    scale: 1.05,
-                                    boxShadow: "0 5px 15px rgba(97, 218, 251, 0.4)"
+                                    scale: 1.03, 
+                                    boxShadow: "0 3px 10px rgba(97, 218, 251, 0.3)",
                                 }}
-                                whileTap={{ scale: 0.95 }}
+                                whileTap={{ scale: 0.98 }}
+                                style={{ transformOrigin: "center" }}
                             >
                                 <i className="fas fa-paper-plane"></i> Contact Me
                             </motion.a>
 
                             <motion.a
                                 href={resumePDF}
-                                download="Tasneem_Mohamed_Frontend_Developer_CV.pdf"
                                 className="btn secondary"
-                                target="_blank"
-                                rel="noopener noreferrer"
                                 whileHover={{
-                                    scale: 1.05,
-                                    boxShadow: "0 5px 15px rgba(0, 0, 0, 0.1)"
+                                    scale: 1.03,
+                                    boxShadow: "0 3px 10px rgba(0, 0, 0, 0.1)",
                                 }}
-                                whileTap={{ scale: 0.95 }}
+                                whileTap={{ scale: 0.98 }}
+                                style={{ transformOrigin: "center" }}
                             >
                                 <i className="fas fa-download"></i> Download CV
                             </motion.a>

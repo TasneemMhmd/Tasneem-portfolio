@@ -125,8 +125,10 @@ ul {
 }
 
 .dark-mode .btn.primary:hover {
-    background-color: black;
+    background-color: transparent;
     color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+
 }
 
 .btn.secondary {
@@ -764,10 +766,10 @@ ul {
 }
 
 .about-cta {
+    padding: 5px; 
     display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+    gap: 15px; 
+    flex-wrap: wrap; 
 }
 
 .about-cta .btn i {
