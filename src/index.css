@@ -71,102 +71,126 @@ section {
 }
 
 /* Navbar Styles */
-/* Navbar mobile styles */
-@media (max-width: 767px) {
-    .nav-links {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.95);
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 0;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        transform: translateY(-150%);
-        transition: transform 0.3s ease;
-        z-index: 998;
-    }
-
-    .dark-mode .nav-links {
-        background-color: rgba(18, 18, 18, 0.95);
-    }
-
-    .nav-links.open {
-        transform: translateY(0);
-    }
-
-    .nav-links li {
-        margin: 1rem 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-link {
-        display: block;
-        padding: 1rem;
-    }
-
-    .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-        cursor: pointer;
-        z-index: 999;
-    }
-
-    .menu-toggle span {
-        height: 3px;
-        width: 100%;
-        background-color: var(--text-color);
-        border-radius: 10px;
-        transition: all 0.3s ease;
-    }
-
-    .dark-mode .menu-toggle span {
-        background-color: white;
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
 }
 
-@media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
-
-    .nav-links {
-        display: flex;
-        position: static;
-        transform: none;
-        background: transparent;
-        box-shadow: none;
-        padding: 0;
-        flex-direction: row;
-    }
-
-    .nav-links li {
-        margin: 0 1.2rem;
-        width: auto;
-    }
-
-    .nav-link {
-        display: inline;
-        padding: 0;
-    }
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 0;
 }
+
+.dark-mode .navbar.scrolled {
+    background-color: rgba(18, 18, 18, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.dark-mode .logo {
+    color: white;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(30deg);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .menu-toggle span {
+    background-color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 1.2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.dark-mode .nav-links a {
+    color: white;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 
 /* Hero Section Styles */
 .hero {
