@@ -1,4 +1,5 @@
 // src/data/projects.js
+import asfarImg from '../assets/images/asfartrip.png';
 import blueImg from '../assets/images/blue.png';
 import alhuriahImg from '../assets/images/alhuriah.png';
 import waveImg from '../assets/images/wave.png';
@@ -12,48 +13,39 @@ import cvImg from '../assets/images/cv.png';
 export const projectsData = [
     {
         id: 1,
-        title: "Blue ERP",
-        description: "An ERP system built for efficient business management with an Arabic-friendly interface.",
-        image: blueImg,
-        technologies: ["React.js", "CSS", "API", "Axios"],
-        category: "erp",
-        challenges: "Implemented complex state management for multiple interconnected modules.",
+        title: "Asfartrip",
+        description: "A beauty center booking system with a clean and user-friendly interface, allowing users to book appointments, explore services, and contact the center easily.",
+        image: asfarImg,
+        technologies: ["React.js", "CSS", "React Router", "API", "Axios"],
+        category: "web",
+        challenges: "Built a multi-page booking application with smooth navigation and form handling, ensuring a seamless user experience.",
+        liveLink: "https://booking-rosy-psi.vercel.app/home",
         featured: true
     },
     {
         id: 2,
-        title: "Alhuriah ERP",
-        description: "A specialized ERP system for sweets factories management with comprehensive tools for production cycle tracking.",
-        image: alhuriahImg,
-        technologies: ["React.js", "CSS", "API", "Axios"],
-        category: "erp",
-        challenges: "Created custom visualizations for production workflows and inventory management.",
-        featured: true
-    },
-    {
-        id: 3,
         title: "Wave",
-        description: "ERP system with customizable applications and strong security measures for comprehensive business management.",
+        description: "ERP system with customizable applications and strong security measures for comprehensive business management and its website.",
         image: waveImg,
-        technologies: ["React.js", "CSS", "API", "Axios"],
+        technologies: ["React.js", "CSS", "React Router",  "API", "Axios", "Material UI"],
         category: "erp",
         challenges: "Designed and implemented a modular architecture to support customizable business applications.",
         liveLink: "https://wave.bluetechnology.online/",
         featured: true
     },
     {
-        id: 4,
+        id: 3,
         title: "معا نتعلم",
         description: "Graduation project focused on creating an interactive learning platform.",
         image: yallanet3lmImg,
-        technologies: ["React.js", "Bootstrap", "CSS", "API", "Axios", "AOS Animation"],
+        technologies: ["React.js", "Bootstrap", "CSS", "React Router", "API", "Axios", "AOS Animation"],
         category: "web",
         challenges: "Implemented responsive design with engaging animations for better user experience.",
         liveLink: "https://graduation-project-doman.vercel.app/",
         featured: true
     },
     {
-        id: 5,
+        id: 4,
         title: "Kotobi",
         description: "A book discovery and management application with modern UI.",
         image: kotobiImg,
@@ -63,7 +55,7 @@ export const projectsData = [
         liveLink: "https://kotobi.vercel.app/",
     },
     {
-        id: 6,
+        id: 5,
         title: "Todo App",
         description: "A task management application showcasing TypeScript integration.",
         image: todoImg,
@@ -73,7 +65,7 @@ export const projectsData = [
         liveLink: "https://tasneemmhmd.github.io/todo-app/",
     },
     {
-        id: 7,
+        id: 6,
         title: "Kasper",
         description: "A clean and modern HTML/CSS template.",
         image: kasperImg,
@@ -83,7 +75,7 @@ export const projectsData = [
         liveLink: "https://tasneemmhmd.github.io/template/",
     },
     {
-        id: 8,
+        id: 7,
         title: "Template",
         description: "A responsive template showcasing HTML/CSS skills.",
         image: template1Img,
@@ -93,7 +85,7 @@ export const projectsData = [
         liveLink: "https://tasneemmhmd.github.io/template1/",
     },
     {
-        id: 9,
+        id: 8,
         title: "CV",
         description: "A responsive template showcasing HTML/CSS skills.",
         image: cvImg,
