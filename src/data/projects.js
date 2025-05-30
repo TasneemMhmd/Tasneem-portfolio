@@ -4,6 +4,7 @@ import blueImg from '../assets/images/blue.png';
 import alhuriahImg from '../assets/images/alhuriah.png';
 import waveImg from '../assets/images/wave.png';
 import yallanet3lmImg from '../assets/images/yallanet3lm.png';
+import landingPageImg from '../assets/images/landingPage.png';
 import kotobiImg from '../assets/images/kotobi.png';
 import todoImg from '../assets/images/todo.png';
 import kasperImg from '../assets/images/kasper.png';
@@ -46,6 +47,16 @@ export const projectsData = [
     },
     {
         id: 4,
+        title: "Landing Page",
+        description: "A simple landing page with a clean design and a call-to-action button.",
+        image: landingPageImg,
+        technologies: ["React.js", "Tailwind CSS"],
+        category: "ui",
+        challenges: "Implemented responsive landing page with engaging animations for better user experience.",
+        liveLink: "https://landing-page-task-one.vercel.app/",
+    },
+    {
+        id: 5,
         title: "Kotobi",
         description: "A book discovery and management application with modern UI.",
         image: kotobiImg,
@@ -55,7 +66,7 @@ export const projectsData = [
         liveLink: "https://kotobi.vercel.app/",
     },
     {
-        id: 5,
+        id: 6,
         title: "Todo App",
         description: "A task management application showcasing TypeScript integration.",
         image: todoImg,
@@ -65,7 +76,7 @@ export const projectsData = [
         liveLink: "https://tasneemmhmd.github.io/todo-app/",
     },
     {
-        id: 6,
+        id: 7,
         title: "Kasper",
         description: "A clean and modern HTML/CSS template.",
         image: kasperImg,
@@ -75,7 +86,7 @@ export const projectsData = [
         liveLink: "https://tasneemmhmd.github.io/template/",
     },
     {
-        id: 7,
+        id: 8,
         title: "Template",
         description: "A responsive template showcasing HTML/CSS skills.",
         image: template1Img,
@@ -85,7 +96,7 @@ export const projectsData = [
         liveLink: "https://tasneemmhmd.github.io/template1/",
     },
     {
-        id: 8,
+        id: 9,
         title: "CV",
         description: "A responsive template showcasing HTML/CSS skills.",
         image: cvImg,
