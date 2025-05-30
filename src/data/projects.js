@@ -51,7 +51,7 @@ export const projectsData = [
         description: "A simple landing page with a clean design and a call-to-action button.",
         image: landingPageImg,
         technologies: ["React.js", "Tailwind CSS"],
-        category: "web",
+        category: "ui",
         challenges: "Created a responsive landing page with a focus on user engagement and conversion.",
         liveLink: "https://landing-page-task-one.vercel.app/",
     },
