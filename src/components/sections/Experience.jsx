@@ -37,8 +37,8 @@ const Experience = () => {
                                 <h3 className="timeline-date">{item.type}</h3>
                                 <div className="timeline-role">{item.role}</div>
                                 <ul className="timeline-description">
-                                    {item.responsibilities?.map((responsibility, idx) => (
-                                        <li key={idx}>{responsibility}</li>
+                                    {item.description?.map((description, idx) => (
+                                        <li key={idx}>{description}</li>
                                     ))}
                                 </ul>
                                 <div className="timeline-tech">

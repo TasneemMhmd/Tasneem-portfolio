@@ -16,7 +16,7 @@ const experienceData = [
             "Worked on a portfolio website for a client, showcasing their work and services",
             "Working on lawyer's website, focusing on responsive design and user engagement"
         ],
-        technologies: ["React.js", "CSS3", "Material UI", "Axios", "Responsive Design"]
+        technologies: ["React.js", "CSS3", "Tailwind css", "Material UI", "Axios", "Responsive Design"]
     },
     {
         id: 2,
