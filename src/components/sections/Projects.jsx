@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { projectsData } from "../../data/projects";
 import ProjectCard from "../ui/ProjectCard";
+
 const Projects = () => {
     const [filter, setFilter] = useState('all');
 
@@ -28,7 +29,7 @@ const Projects = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    {['all', 'erp', 'web', 'ui'].map((filterType) => (
+                    {['all', 'erp', 'web', 'ui', 'mini'].map((filterType) => (
                         <button
                             key={filterType}
                             className={filter === filterType ? 'active' : ''}
@@ -38,6 +39,7 @@ const Projects = () => {
                             {filterType === 'erp' && 'ERP Systems'}
                             {filterType === 'web' && 'Web Apps'}
                             {filterType === 'ui' && 'UI Projects'}
+                            {filterType === 'mini' && 'Mini-Projects'}
                         </button>
                     ))}
                 </motion.div>

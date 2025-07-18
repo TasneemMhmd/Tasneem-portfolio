@@ -5,14 +5,16 @@ const experienceData = [
         title: "Front-end Developer",
         company: "Freelance",
         location: "Egypt",
-        period: "2 months",
+        period: "5 months",
         type: "Freelance",
         description: [
             "Developed front-end components for a travel booking website (flight and hotel reservations) using React.js, Material-UI, and CSS3",
             "Created responsive and visually appealing interfaces with focus on user experience",
             "Contributed to UI/UX development of a large-scale car rental management system",
-            "Built dynamic, user-friendly layouts with React.js and CSS3",
-            "Collaborated with clients to understand business needs and deliver scalable solutions"
+            "Built dynamic, user-friendly layouts with React.js and Tailwind CSS",
+            "Collaborated with clients to understand business needs and deliver scalable solutions",
+            "Worked on a portfolio website for a client, showcasing their work and services",
+            "Working on lawyer's website, focusing on responsive design and user engagement"
         ],
         technologies: ["React.js", "CSS3", "Material UI", "Axios", "Responsive Design"]
     },
