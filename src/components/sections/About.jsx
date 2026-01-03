@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import tasneemImage from "../../assets/images/about.png";
 import resumePDF from "../../assets/Tasneem_Mohamed_Mahmoud_resume.pdf";
 
 const About = () => {
@@ -20,35 +19,6 @@ const About = () => {
                 </motion.div>
 
                 <div className="about-content">
-                    <motion.div
-                        className="about-image-container"
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                    >
-                        <div className="image-wrapper">
-                            <img
-                                src={tasneemImage}
-                                alt="Tasneem Mohamed - Frontend Developer"
-                                className="profile-image"
-                            />
-                            <div className="image-border"></div>
-                            <div className="image-dots"></div>
-                        </div>
-                        <motion.div
-                            className="image-tech-stack"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.8 }}
-                        >
-                            <span>React</span>
-                            <span>Next</span>
-                            <span>JavaScript</span>
-                            <span>CSS3</span>
-                            <span>HTML5</span>
-                        </motion.div>
-                    </motion.div>
-
                     <motion.div
                         className="about-text"
                         initial={{ opacity: 0, x: 50 }}
