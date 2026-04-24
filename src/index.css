@@ -1959,3 +1959,36 @@ ul {
         font-size: 1rem;
     }
 }
+
+.show-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 0;
+    border: none;
+    border-bottom: 1.5px solid var(--primary-color); 
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: gap 0.3s ease, opacity 0.3s ease;
+}
+
+.show-more-btn:hover {
+    opacity: 0.7;
+    gap: 12px;
+}
+
+.show-more-btn:active {
+    transform: scale(0.97);
+}
+
+.show-more-icon {
+    font-size: 0.8rem;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.show-more-icon.rotated {
+    transform: rotate(180deg);
+}
