@@ -1,54 +1,64 @@
-// src/data/experience.js
 const experienceData = [
-    {
+        {
         id: 1,
         title: "Front-end Developer",
         company: "Freelance",
         location: "Egypt",
-        period: "5 months",
+        period: "Feb 2025 – Present",
         type: "Freelance",
         description: [
-            "Developed front-end components for a travel booking website (flight and hotel reservations) using React.js, Material-UI, and CSS3",
-            "Created responsive and visually appealing interfaces with focus on user experience",
-            "Contributed to UI/UX development of a large-scale car rental management system",
-            "Built dynamic, user-friendly layouts with React.js and Tailwind CSS",
-            "Collaborated with clients to understand business needs and deliver scalable solutions",
-            "Worked on a portfolio website for a client, showcasing their work and services",
-            "Working on lawyer's website, focusing on responsive design and user engagement"
+            "Built travel booking system using React.js and APIs",
+            "Developed car management system UI",
+            "Working on APM platform and admin dashboard",
+            "Delivered scalable and responsive UI solutions"
         ],
-        technologies: ["React.js", "CSS3", "Tailwind css", "Material UI", "Axios", "Responsive Design"]
+        technologies: ["React.js", "Material UI", "Axios", "REST APIs"]
     },
     {
         id: 2,
         title: "Front-end Developer",
-        company: "Blue Technology",
-        location: "Shebin El kom, Menofia, Egypt",
-        period: "3 months",
+        company: "Youverse",
+        location: "Egypt",
+        period: "Aug 2025 – Dec 2025",
         type: "Full-time",
         description: [
-            "Developed dynamic, responsive user interfaces using React.js and CSS",
-            "Integrated React.js with Laravel to build full-stack applications",
-            "Implemented API integration using Axios for seamless data communication",
-            "Ensured mobile responsiveness and performance optimization",
-            "Conducted thorough testing and debugging for high-quality delivery"
+            "Developed scalable learning platform using React.js",
+            "Built full authentication system (Login, Register, OTP, Reset Password)",
+            "Implemented JWT authentication with secure cookies",
+            "Developed video learning system with progress tracking",
+            "Worked on certificate validation and generation",
+            "Improved performance and refactored UI components"
         ],
-        technologies: ["React.js", "CSS3", "Axios", "API Integration", "Laravel"]
+        technologies: ["React.js", "Axios", "REST APIs", "JWT"]
     },
     {
         id: 3,
+        title: "Front-end Developer",
+        company: "Blue Technology",
+        location: "Menofia, Egypt",
+        period: "3 months",
+        type: "Full-time",
+        description: [
+            "Worked on ERP system integrated with Laravel",
+            "Improved performance and reduced load time",
+            "Built responsive UI components",
+            "System used by 500+ users"
+        ],
+        technologies: ["React.js", "CSS3", "Laravel", "API Integration"]
+    },
+    {
+        id: 4,
         title: "Front-end Developer Intern",
         company: "Blue Technology",
-        location: "Shebin El kom, Menofia, Egypt",
+        location: "Menofia, Egypt",
         period: "3 months",
         type: "Internship",
         description: [
-            "Assisted in creating responsive web applications with HTML5, CSS3, and React.js",
-            "Worked with RESTful APIs to improve user experience",
-            "Participated in daily sprint meetings and agile development processes",
-            "Collaborated effectively with cross-functional development teams",
-            "Gained experience in modern front-end development workflows"
+            "Built responsive web pages using HTML, CSS, React",
+            "Worked with REST APIs",
+            "Collaborated in agile team"
         ],
-        technologies: ["HTML5", "CSS3", "React.js", "REST APIs", "Agile/Scrum"]
+        technologies: ["HTML5", "CSS3", "React.js"]
     }
 ];
 
