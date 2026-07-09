@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { experienceData } from '../../data/experience';
 import { FaMapMarkerAlt } from 'react-icons/fa';
