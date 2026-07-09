@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { FaUserGraduate, FaCertificate } from "react-icons/fa";
 import { motion } from "framer-motion";
 
