@@ -89,7 +89,7 @@ useEffect(() => {
                 </div>
 
                 <AnimatePresence>
-                    {(menuOpen || window.innerWidth > 992) && (
+                    {(menuOpen || windowWidth > 992) && (
                         <motion.ul
                             className={`nav-links ${menuOpen ? "open" : ""}`}
                             initial={{ opacity: 0, y: -20 }}
